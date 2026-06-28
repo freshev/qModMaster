@@ -4,15 +4,21 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += core gui
+QT += serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 5): QT += core5compat
+
 
 TARGET = qModMaster
 TEMPLATE = app
 
 SOURCES += src/main.cpp \
+    3rdparty/libmodbus/modbus-data.cpp \
+    3rdparty/libmodbus/modbus-rtu.cpp \
+    3rdparty/libmodbus/modbus-tcp.cpp \
+    3rdparty/libmodbus/modbus.cpp \
     src/mainwindow.cpp \
-    3rdparty/libmodbus/modbus.c \
     forms/about.cpp \
     forms/settingsmodbusrtu.cpp \
     forms/settingsmodbustcp.cpp \
@@ -22,9 +28,6 @@ SOURCES += src/main.cpp \
     src/rawdatamodel.cpp \
     forms/settings.cpp \
     forms/busmonitor.cpp \
-    3rdparty/libmodbus/modbus-data.c \
-    3rdparty/libmodbus/modbus-tcp.c \
-    3rdparty/libmodbus/modbus-rtu.c \
     src/rawdatadelegate.cpp \
     src/registersdatadelegate.cpp \
     src/modbuscommsettings.cpp \
@@ -59,6 +62,7 @@ HEADERS  += src/mainwindow.h \
 INCLUDEPATH += 3rdparty/libmodbus \
     3rdparty/QsLog
 
+TRANSLATIONS += translations/$$TARGET"_ru_RU.ts"
 TRANSLATIONS += translations/$$TARGET"_zh_CN.ts"
 TRANSLATIONS += translations/$$TARGET"_zh_TW.ts"
 
@@ -72,12 +76,10 @@ win32:DEFINES += _TTY_WIN_  WINVER=0x0501
 
 win32:LIBS += -lsetupapi -lwsock32 -lws2_32
 
-QMAKE_CXXFLAGS += -std=gnu++11
-
 DEFINES += QS_LOG_LINE_NUMBERS     # automatically writes the file and line for each log message
 #DEFINES += QS_LOG_DISABLE         # logging code is replaced with a no-op
 #DEFINES += QS_LOG_SEPARATE_THREAD # messages are queued and written from a separate thread
-#DEFINES += LIB_MODBUS_DEBUG_OUTPUT # enable debug output from libmodbus
+DEFINES += LIB_MODBUS_DEBUG_OUTPUT # enable debug output from libmodbus
 
 FORMS    += forms/mainwindow.ui \
     forms/about.ui \

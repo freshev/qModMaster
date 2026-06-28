@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>220</width>
-    <height>134</height>
+    <width>340</width>
+    <height>150</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -24,8 +24,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>320</width>
-    <height>150</height>
+    <width>340</width>
+    <height>152</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -38,26 +38,6 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="2">
-      <widget class="QSpinBox" name="sbResponseTimeout">
-       <property name="minimum">
-        <number>0</number>
-       </property>
-       <property name="maximum">
-        <number>20</number>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="lblTimeout">
-       <property name="text">
-        <string>Response Timeout (sec)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="1">
       <widget class="QLabel" name="lblMaxNoOfRawDataLines">
        <property name="sizePolicy">
@@ -82,7 +62,34 @@
         <string>Max No Of Bus Monitor Lines</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QSpinBox" name="sbBaseAddr">
+       <property name="maximum">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSpinBox" name="sbResponseTimeout">
+       <property name="minimum">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <number>20</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="lblBaseAddr">
+       <property name="text">
+        <string>Base Addr</string>
        </property>
       </widget>
      </item>
@@ -120,20 +127,13 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="2">
-      <widget class="QSpinBox" name="sbBaseAddr">
-       <property name="maximum">
-        <number>1</number>
-       </property>
-       <property name="value">
-        <number>1</number>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="lblBaseAddr">
+     <item row="1" column="1">
+      <widget class="QLabel" name="lblTimeout">
        <property name="text">
-        <string>Base Addr</string>
+        <string>Response Timeout (sec)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
        </property>
       </widget>
      </item>
@@ -142,10 +142,13 @@
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>true</bool>
      </property>
     </widget>
    </item>

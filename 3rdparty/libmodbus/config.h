@@ -10,7 +10,7 @@
 
 /* Define to 1 if you have the declaration of `TIOCM_RTS', and to 0 if you
    don't. */
-#define HAVE_DECL_TIOCM_RTS 0
+#define HAVE_DECL_TIOCM_RTS 1
 
 /* Define to 1 if you have the declaration of `__CYGWIN__', and to 0 if you
    don't. */

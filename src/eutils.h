@@ -138,6 +138,8 @@ public:
         return p.at(0);
     }
 
+    static int rts(QString r);
+
     static enum {RTU = 0, TCP = 1, None = 0} ModbusMode;
 
     static enum {Bin = 2, UInt = 10, SInt = 11, Hex = 16} NumberFormat;

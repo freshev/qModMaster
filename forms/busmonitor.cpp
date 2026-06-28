@@ -57,7 +57,7 @@ void BusMonitor::save()
 
     //iterate
     for (int i = 0; i < sl.size(); ++i)
-              ts << sl.at(i) << endl;
+              ts << sl.at(i) << Qt::endl;
 
     //Close File
     file.close();
@@ -120,7 +120,7 @@ void BusMonitor::selectedRow(const QModelIndex & selected)
 void BusMonitor::parseTxMsg(QString msg)
 {
     ui->txtPDU->setPlainText("Type : Tx Message");
-    QStringList row = msg.split(QRegExp("\\s+"));
+    QStringList row = msg.split(QRegularExpression("\\s+"));
         ui->txtPDU->appendPlainText("Timestamp : " + row[2]);
         if (msg.indexOf("RTU") > -1){//RTU message
             QStringList pdu;
@@ -188,7 +188,7 @@ void BusMonitor::parseTxPDU(QStringList pdu, QString slave)
 void BusMonitor::parseRxMsg(QString msg)
 {
     ui->txtPDU->setPlainText("Type : Rx Message");
-    QStringList row = msg.split(QRegExp("\\s+"));
+    QStringList row = msg.split(QRegularExpression("\\s+"));
     ui->txtPDU->appendPlainText("Timestamp : " + row[2]);
     if (msg.indexOf("RTU") > -1){//RTU message
         QStringList pdu;
@@ -273,7 +273,7 @@ void BusMonitor::parseRxPDU(QStringList pdu, QString slave)
 void BusMonitor::parseSysMsg(QString msg)
 {
     ui->txtPDU->setPlainText("Type : System Message");
-    QStringList row = msg.split(QRegExp("\\s+"));
+    QStringList row = msg.split(QRegularExpression("\\s+"));
     ui->txtPDU->appendPlainText("Timestamp : " + row[2]);
     ui->txtPDU->appendPlainText("Message" + msg.mid(msg.indexOf(" : ")));
 }

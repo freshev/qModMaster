@@ -8,6 +8,11 @@
         <source>About</source>
         <translation>關於</translation>
     </message>
+    <message>
+        <location filename="../forms/about.ui" line="62"/>
+        <source>lib version</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BusMonitor</name>
@@ -40,9 +45,8 @@
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../forms/busmonitor.ui" line="181"/>
         <source>Start-Stop Monitor</source>
-        <translation>開始-停止監視器</translation>
+        <translation type="vanished">開始-停止監視器</translation>
     </message>
 </context>
 <context>
@@ -50,7 +54,7 @@
     <message>
         <location filename="../forms/mainwindow.ui" line="26"/>
         <source>Modbus Master</source>
-        <translation>Modbus 主機</translation>
+        <translation>QModMaster (RTS mod)</translation>
     </message>
     <message>
         <location filename="../forms/mainwindow.ui" line="67"/>
@@ -58,9 +62,8 @@
         <translation>Modbus 模式</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="94"/>
         <source>Slave ID</source>
-        <translation>從機 ID</translation>
+        <translation type="vanished">從機 ID</translation>
     </message>
     <message>
         <location filename="../forms/mainwindow.ui" line="130"/>
@@ -99,105 +102,129 @@
     </message>
     <message>
         <location filename="../forms/mainwindow.ui" line="249"/>
-        <location filename="../src/mainwindow.cpp" line="187"/>
+        <location filename="../src/mainwindow.cpp" line="198"/>
         <source>Number of Coils</source>
         <translation>線圈數量</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="284"/>
         <source>Add Items</source>
-        <translation>增加項目</translation>
+        <translation type="vanished">增加項目</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="310"/>
         <source>Clear Items</source>
-        <translation>清除項目</translation>
+        <translation type="vanished">清除項目</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="373"/>
+        <location filename="../forms/mainwindow.ui" line="94"/>
+        <source>Slave Addr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="315"/>
         <source>File</source>
         <translation>文檔</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="379"/>
+        <location filename="../forms/mainwindow.ui" line="321"/>
         <source>Options</source>
         <translation>選項</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="388"/>
+        <location filename="../forms/mainwindow.ui" line="330"/>
         <source>Help</source>
         <translation>幫助</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="394"/>
+        <location filename="../forms/mainwindow.ui" line="337"/>
         <source>View</source>
         <translation>視圖</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="400"/>
+        <location filename="../forms/mainwindow.ui" line="344"/>
         <source>Commands</source>
         <translation>命令</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="441"/>
+        <location filename="../forms/mainwindow.ui" line="387"/>
         <source>Exit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="477"/>
+        <location filename="../forms/mainwindow.ui" line="423"/>
         <source>About...</source>
         <translation>關於...</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="489"/>
+        <location filename="../forms/mainwindow.ui" line="435"/>
         <source>Bus Monitor</source>
         <translation>總線監視器</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="501"/>
+        <location filename="../forms/mainwindow.ui" line="447"/>
         <source>Settings...</source>
         <translation>設置...</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="513"/>
+        <location filename="../forms/mainwindow.ui" line="459"/>
         <source>Read / Write</source>
         <translation>讀/寫</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="525"/>
+        <location filename="../forms/mainwindow.ui" line="472"/>
         <source>Connect</source>
         <translation>連接</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="538"/>
+        <location filename="../forms/mainwindow.ui" line="484"/>
         <source>Scan</source>
         <translation>掃描</translation>
     </message>
     <message>
-        <location filename="../forms/mainwindow.ui" line="547"/>
+        <location filename="../forms/mainwindow.ui" line="493"/>
         <source>Reset Counters</source>
         <translation>重置計數器</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="50"/>
-        <location filename="../src/mainwindow.cpp" line="510"/>
+        <location filename="../forms/mainwindow.ui" line="547"/>
+        <source>Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="556"/>
+        <location filename="../forms/mainwindow.ui" line="559"/>
+        <source>Clear Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="568"/>
+        <source>Modbus Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/mainwindow.ui" line="577"/>
+        <source>Russian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="55"/>
+        <location filename="../src/mainwindow.cpp" line="547"/>
         <source>Packets : </source>
         <translation>包：</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="52"/>
-        <location filename="../src/mainwindow.cpp" line="511"/>
+        <location filename="../src/mainwindow.cpp" line="57"/>
+        <location filename="../src/mainwindow.cpp" line="548"/>
         <source>Errors : </source>
         <translation>錯誤：</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="188"/>
+        <location filename="../src/mainwindow.cpp" line="199"/>
         <source>Number of Registers</source>
         <translation>寄存器數量</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="403"/>
-        <location filename="../src/mainwindow.cpp" line="429"/>
+        <location filename="../src/mainwindow.cpp" line="440"/>
+        <location filename="../src/mainwindow.cpp" line="468"/>
         <source>Request failed
 Add items to Registers Table.</source>
         <translation>請求失敗\n嚮寄存器表加入項目。</translation>
@@ -206,49 +233,59 @@ Add items to Registers Table.</source>
 <context>
     <name>ModbusAdapter</name>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="50"/>
+        <location filename="../src/modbusadapter.cpp" line="48"/>
         <source>Connection failed
 Could not connect to serial port.</source>
         <translation>連接失敗
 無法連接串口。</translation>
     </message>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="79"/>
+        <location filename="../src/modbusadapter.cpp" line="86"/>
+        <source>Connection failed
+Blank IP Address.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/modbusadapter.cpp" line="247"/>
+        <location filename="../src/modbusadapter.cpp" line="332"/>
+        <source>Read data failed.
+System exception. [</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Connection failed
 Wrong IP Address.</source>
-        <translation>連接失敗
+        <translation type="vanished">連接失敗
 IP地址錯誤。</translation>
     </message>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="97"/>
+        <location filename="../src/modbusadapter.cpp" line="104"/>
         <source>Connection failed
 Could not connect to TCP port.</source>
         <translation>連接失敗
 無法連接TCP口。</translation>
     </message>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="232"/>
         <source>Read data failed.
 Slave threw exception  &gt;  </source>
-        <translation>讀數據失敗
+        <translation type="vanished">讀數據失敗
 從機拋出異常  &gt;  </translation>
     </message>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="239"/>
+        <location filename="../src/modbusadapter.cpp" line="253"/>
         <source>Read data failed.
 Number of registers returned does not match number of registers requested!. [</source>
         <translation>讀數據失敗
 返回的寄存器數量與請求的不匹配！ [</translation>
     </message>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="318"/>
         <source>Write data failed.
 Slave threw exception  &gt;  </source>
-        <translation>寫數據失敗
+        <translation type="vanished">寫數據失敗
 從機拋出異常  &gt;  </translation>
     </message>
     <message>
-        <location filename="../src/modbusadapter.cpp" line="325"/>
+        <location filename="../src/modbusadapter.cpp" line="338"/>
         <source>Write data failed.
 Number of registers returned does not match number of registers requested!. [</source>
         <translation>寫數據失敗
@@ -279,12 +316,17 @@ Value is smaller than -32768.</source>
         <translation>設置</translation>
     </message>
     <message>
-        <location filename="../forms/settings.ui" line="96"/>
+        <location filename="../forms/settings.ui" line="62"/>
         <source>Max No Of Bus Monitor Lines</source>
         <translation>監視器行數上限</translation>
     </message>
     <message>
-        <location filename="../forms/settings.ui" line="106"/>
+        <location filename="../forms/settings.ui" line="92"/>
+        <source>Base Addr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/settings.ui" line="133"/>
         <source>Response Timeout (sec)</source>
         <translation>響應超時（秒）</translation>
     </message>

@@ -79,7 +79,7 @@ void ModbusAdapter::modbusConnectTCP(QString ip, int port, int timeOut)
 
     QLOG_INFO()<<  "Modbus Connect TCP";
 
-    line = "Connecting to IP : " + ip + ":" + port;
+    line = "Connecting to IP : " + ip + ":" + QString::number(port);
     QLOG_INFO() <<  line;
     strippedIP = stripIP(ip);
     if (strippedIP == ""){
@@ -352,7 +352,7 @@ void ModbusAdapter::busMonitorRequestData(uint8_t * data, uint8_t dataLen)
     QString line;
 
     for(int i = 0; i < dataLen; ++i ) {
-        line += QString().sprintf( "%.2x  ", data[i] );
+        line += QString().asprintf( "%.2x  ", data[i] );
     }
 
     QLOG_INFO() << "Tx Data : " << line;
@@ -371,7 +371,7 @@ void ModbusAdapter::busMonitorResponseData(uint8_t * data, uint8_t dataLen)
     QString line;
 
     for(int i = 0; i < dataLen; ++i ) {
-        line += QString().sprintf( "%.2x  ", data[i] );
+        line += QString().asprintf( "%.2x  ", data[i] );
     }
 
     QLOG_INFO() << "Rx Data : " << line;
@@ -481,8 +481,6 @@ QString ModbusAdapter::stripIP(QString ip)
 
 }
 
-extern "C" {
-
 void busMonitorRawResponseData(uint8_t * data, uint8_t dataLen)
 {
         m_instance->busMonitorResponseData(data, dataLen);
@@ -493,4 +491,3 @@ void busMonitorRawRequestData(uint8_t * data, uint8_t dataLen)
         m_instance->busMonitorRequestData(data, dataLen);
 }
 
-}

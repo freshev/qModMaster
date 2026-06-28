@@ -12,10 +12,14 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <errno.h>
-#include <limits.h>
+//#include <limits.h>
 #include <time.h>
 #ifndef _MSC_VER
 #include <unistd.h>
+#else
+#include <cstdio>
+#include <cstdarg>
+#include <cstdint>
 #endif
 
 #include <config.h>
@@ -162,6 +166,9 @@ static unsigned int compute_response_length_from_request(modbus_t *ctx, uint8_t 
     return offset + length + ctx->backend->checksum_length;
 }
 
+extern void busMonitorRawResponseData(uint8_t * data, uint8_t dataLen);
+extern void busMonitorRawRequestData(uint8_t * data, uint8_t dataLen);
+
 /* Sends a request/response */
 static int send_msg(modbus_t *ctx, uint8_t *msg, int msg_length)
 {
@@ -177,7 +184,7 @@ static int send_msg(modbus_t *ctx, uint8_t *msg, int msg_length)
     }
 
 	//***Not part of libmodbus - added for QModMaster***//
-    busMonitorRawRequestData(msg,msg_length);
+    busMonitorRawRequestData(msg, msg_length);
     
 	/* In recovery mode, the write command will be issued until to be
        successful! Disabled by default. */
@@ -664,32 +671,25 @@ static int response_io_status(uint8_t *tab_io_status,
 }
 
 /* Build the exception response */
-static int response_exception(modbus_t *ctx, sft_t *sft,
-                              int exception_code, uint8_t *rsp,
-                              unsigned int to_flush,
-                              const char* template, ...)
+int response_exception(modbus_t* ctx, sft_t* sft, int exception_code,
+                       uint8_t* rsp, unsigned int to_flush,
+                       const char* fmt_template, ...)
 {
-    int rsp_length;
-
-    /* Print debug message */
-    if (ctx->debug) {
-        va_list ap;
-
-        va_start(ap, template);
-        vfprintf(stderr, template, ap);
+    if (ctx && ctx->debug) {
+        std::va_list ap;
+        va_start(ap, fmt_template);
+        std::vfprintf(stderr, fmt_template, ap);
         va_end(ap);
     }
 
-    /* Flush if required */
     if (to_flush) {
         _sleep_response_timeout(ctx);
         modbus_flush(ctx);
     }
 
-    /* Build exception response */
-    sft->function = sft->function + 0x80;
-    rsp_length = ctx->backend->build_response_basis(sft, rsp);
-    rsp[rsp_length++] = exception_code;
+    sft->function += 0x80;
+    int rsp_length = ctx->backend->build_response_basis(sft, rsp);
+    rsp[rsp_length++] = static_cast<uint8_t>(exception_code);
 
     return rsp_length;
 }
@@ -930,10 +930,10 @@ int modbus_reply(modbus_t *ctx, const uint8_t *req,
                 address);
         } else {
             uint16_t data = mb_mapping->tab_registers[mapping_address];
-            uint16_t and = (req[offset + 3] << 8) + req[offset + 4];
-            uint16_t or = (req[offset + 5] << 8) + req[offset + 6];
+            uint16_t tand = (req[offset + 3] << 8) + req[offset + 4];
+            uint16_t tor = (req[offset + 5] << 8) + req[offset + 6];
 
-            data = (data & and) | (or & (~and));
+            data = (data & tand) | (tor & (~tand));
             mb_mapping->tab_registers[mapping_address] = data;
             memcpy(rsp, req, req_length);
             rsp_length = req_length;
@@ -1842,9 +1842,9 @@ void modbus_mapping_free(modbus_mapping_t *mb_mapping)
  */
 size_t strlcpy(char *dest, const char *src, size_t dest_size)
 {
-    register char *d = dest;
-    register const char *s = src;
-    register size_t n = dest_size;
+    char *d = dest;
+    const char *s = src;
+    size_t n = dest_size;
 
     /* Copy as many bytes as will fit */
     if (n != 0 && --n != 0) {

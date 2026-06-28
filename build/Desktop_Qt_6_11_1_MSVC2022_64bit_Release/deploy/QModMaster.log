@@ -1,0 +1,217 @@
+ INFO 2026-06-28T19:36:23.035 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:23:035 : 01  03  00  00  00  2C  44  17  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:23.035 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  83  10  40  fc  " 
+ INFO 2026-06-28T19:36:23.035 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:23:035 : 01  83  10  40  FC  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:23.035 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  -1 
+ERROR 2026-06-28T19:36:23.035 ..\..\src\modbusadapter.cpp @ 245 Modbus Read Data failed.  "System exception. [Bad file descriptor]" 
+ INFO 2026-06-28T19:36:23.035 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "Sys > 19:36:23:035 : System exception. [Bad file descriptor]"  , No of lines =  50 
+ INFO 2026-06-28T19:36:23.041 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  35 , errors =  20 
+ INFO 2026-06-28T19:36:23.641 ..\..\src\mainwindow.cpp @ 364 No Of Regs changed. Value =  4 
+ INFO 2026-06-28T19:36:23.641 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "3" 
+ INFO 2026-06-28T19:36:23.641 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  4  , offset =  0  , first row =  0  , last row =  0 
+ INFO 2026-06-28T19:36:23.641 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:36:23.641 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  35 , errors =  20 
+ INFO 2026-06-28T19:36:24.523 ..\..\src\mainwindow.cpp @ 364 No Of Regs changed. Value =  42 
+ INFO 2026-06-28T19:36:24.523 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "3" 
+ INFO 2026-06-28T19:36:24.523 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  42  , offset =  0  , first row =  0  , last row =  4 
+ INFO 2026-06-28T19:36:24.523 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:36:24.523 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  35 , errors =  20 
+ INFO 2026-06-28T19:36:25.078 ..\..\src\mainwindow.cpp @ 364 No Of Regs changed. Value =  4 
+ INFO 2026-06-28T19:36:25.078 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "3" 
+ INFO 2026-06-28T19:36:25.078 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  4  , offset =  0  , first row =  0  , last row =  0 
+ INFO 2026-06-28T19:36:25.078 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:36:25.078 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  35 , errors =  20 
+ INFO 2026-06-28T19:36:25.521 ..\..\src\mainwindow.cpp @ 364 No Of Regs changed. Value =  43 
+ INFO 2026-06-28T19:36:25.521 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "3" 
+ INFO 2026-06-28T19:36:25.521 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  43  , offset =  0  , first row =  0  , last row =  4 
+ INFO 2026-06-28T19:36:25.521 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:36:25.521 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  35 , errors =  20 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:26.492 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2b  05  d5  " 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:26:492 : 01  03  00  00  00  2B  05  D5  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  83  10  40  fc  " 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:26:492 : 01  83  10  40  FC  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  -1 
+ERROR 2026-06-28T19:36:26.492 ..\..\src\modbusadapter.cpp @ 245 Modbus Read Data failed.  "System exception. [Bad file descriptor]" 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "Sys > 19:36:26:492 : System exception. [Bad file descriptor]"  , No of lines =  50 
+ INFO 2026-06-28T19:36:26.492 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  36 , errors =  21 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:27.360 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2b  05  d5  " 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:27:360 : 01  03  00  00  00  2B  05  D5  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  83  10  40  fc  " 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:27:360 : 01  83  10  40  FC  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  -1 
+ERROR 2026-06-28T19:36:27.360 ..\..\src\modbusadapter.cpp @ 245 Modbus Read Data failed.  "System exception. [Bad file descriptor]" 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "Sys > 19:36:27:360 : System exception. [Bad file descriptor]"  , No of lines =  50 
+ INFO 2026-06-28T19:36:27.360 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  37 , errors =  22 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:28.041 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2b  05  d5  " 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:28:041 : 01  03  00  00  00  2B  05  D5  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  83  10  40  fc  " 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:28:041 : 01  83  10  40  FC  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  -1 
+ERROR 2026-06-28T19:36:28.041 ..\..\src\modbusadapter.cpp @ 245 Modbus Read Data failed.  "System exception. [Bad file descriptor]" 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "Sys > 19:36:28:041 : System exception. [Bad file descriptor]"  , No of lines =  50 
+ INFO 2026-06-28T19:36:28.041 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  38 , errors =  23 
+ INFO 2026-06-28T19:36:28.420 ..\..\src\mainwindow.cpp @ 364 No Of Regs changed. Value =  4 
+ INFO 2026-06-28T19:36:28.420 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "3" 
+ INFO 2026-06-28T19:36:28.420 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  4  , offset =  0  , first row =  0  , last row =  0 
+ INFO 2026-06-28T19:36:28.420 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:36:28.420 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  38 , errors =  23 
+ INFO 2026-06-28T19:36:28.975 ..\..\src\mainwindow.cpp @ 364 No Of Regs changed. Value =  42 
+ INFO 2026-06-28T19:36:28.975 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "3" 
+ INFO 2026-06-28T19:36:28.975 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  42  , offset =  0  , first row =  0  , last row =  4 
+ INFO 2026-06-28T19:36:28.975 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:36:28.975 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  38 , errors =  23 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:29.482 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:29:482 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  83  10  40  fc  " 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:29:482 : 01  83  10  40  FC  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  -1 
+ERROR 2026-06-28T19:36:29.482 ..\..\src\modbusadapter.cpp @ 245 Modbus Read Data failed.  "System exception. [Bad file descriptor]" 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "Sys > 19:36:29:482 : System exception. [Bad file descriptor]"  , No of lines =  50 
+ INFO 2026-06-28T19:36:29.482 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  39 , errors =  24 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:30.180 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:30:180 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  7f  98  25  d6  7f  6f  9e  03  5e  a1  e1  54  d0  cf  02  af  35  fa  bb  24  18  e2  25  ec  bd  e7  ea  fa  43  d3  15  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  d1  dd  " 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:30:180 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  7F  98  25  D6  7F  6F  9E  03  5E  A1  E1  54  D0  CF  02  AF  35  FA  BB  24  18  E2  25  EC  BD  E7  EA  FA  43  D3  15  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  D1  DD  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:30.180 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  40 , errors =  24 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:31.177 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:31:177 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  86  67  da  d6  79  6f  9e  fd  88  5e  1f  4f  37  80  1a  af  34  b4  bb  24  18  7a  25  ef  2f  75  ea  fa  43  52  14  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  ef  f5  " 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:31:177 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  86  67  DA  D6  79  6F  9E  FD  88  5E  1F  4F  37  80  1A  AF  34  B4  BB  24  18  7A  25  EF  2F  75  EA  FA  43  52  14  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  EF  F5  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:31.177 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  41 , errors =  24 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:31.765 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:31:765 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  7b  98  25  d6  7b  6f  9e  03  5e  a1  e1  4f  35  72  1a  af  35  f2  bb  24  18  8a  25  ec  b2  e3  ea  fa  43  ac  14  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  f5  09  " 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:31:765 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  7B  98  25  D6  7B  6F  9E  03  5E  A1  E1  4F  35  72  1A  AF  35  F2  BB  24  18  8A  25  EC  B2  E3  EA  FA  43  AC  14  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  F5  09  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:31.765 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  42 , errors =  24 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:41.317 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:41:317 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  8a  67  da  d6  75  6f  9e  fd  90  5e  1f  57  01  c2  02  af  34  b8  bb  24  18  7a  25  ef  29  75  ea  fa  43  f8  14  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  36  b0  " 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:41:317 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  8A  67  DA  D6  75  6F  9E  FD  90  5E  1F  57  01  C2  02  AF  34  B8  BB  24  18  7A  25  EF  29  75  EA  FA  43  F8  14  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  36  B0  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:41.317 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  43 , errors =  24 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:42.048 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:42:048 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  77  98  25  d6  77  6f  9e  03  5e  a1  e1  4f  01  43  1f  af  35  ea  bb  24  18  52  25  ec  86  ef  ea  fa  43  bf  2f  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  39  e5  " 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:42:048 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  77  98  25  D6  77  6F  9E  03  5E  A1  E1  4F  01  43  1F  AF  35  EA  BB  24  18  52  25  EC  86  EF  EA  FA  43  BF  2F  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  39  E5  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:42.048 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  44 , errors =  24 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:42.692 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:42:692 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  8e  67  da  d6  71  6f  9e  fd  98  5e  1f  4f  1f  89  00  af  34  bc  bb  24  18  7a  25  ef  3f  75  ea  fa  43  51  2e  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  33  e5  " 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:42:692 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  8E  67  DA  D6  71  6F  9E  FD  98  5E  1F  4F  1F  89  00  AF  34  BC  BB  24  18  7A  25  EF  3F  75  EA  FA  43  51  2E  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  33  E5  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:42.692 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  45 , errors =  24 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:44.325 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:44:325 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  73  98  25  d6  73  6f  9e  03  5e  a1  e1  4d  63  ea  02  af  35  e2  bb  24  18  3a  25  ec  9a  eb  ea  fa  43  92  2e  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  5b  9e  " 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:44:325 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  73  98  25  D6  73  6F  9E  03  5E  A1  E1  4D  63  EA  02  AF  35  E2  BB  24  18  3A  25  EC  9A  EB  EA  FA  43  92  2E  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  5B  9E  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:44.325 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  46 , errors =  24 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:45.165 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:45:165 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  b2  67  da  d6  4d  6f  9e  fd  e0  5e  1f  4f  1c  87  01  af  34  80  bb  24  18  7a  25  ef  38  75  ea  fa  43  3f  2d  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  63  e3  " 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:45:165 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  B2  67  DA  D6  4D  6F  9E  FD  E0  5E  1F  4F  1C  87  01  AF  34  80  BB  24  18  7A  25  EF  38  75  EA  FA  43  3F  2D  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  63  E3  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:45.165 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  47 , errors =  24 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:49.747 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:49:747 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  4f  98  25  d6  4f  6f  9e  03  5e  a1  e1  4f  19  6f  01  af  35  9a  bb  24  18  42  25  ec  9e  d7  ea  fa  43  ab  2d  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  fc  c6  " 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:49:747 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  4F  98  25  D6  4F  6F  9E  03  5E  A1  E1  4F  19  6F  01  AF  35  9A  BB  24  18  42  25  EC  9E  D7  EA  FA  43  AB  2D  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  FC  C6  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:49.747 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  48 , errors =  24 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:50.365 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:50:365 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  b6  67  da  d6  49  6f  9e  fd  e8  5e  1f  4e  0a  e6  02  af  34  84  bb  24  18  7a  25  ef  31  75  ea  fa  43  f5  2b  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  3d  3e  " 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:50:365 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  B6  67  DA  D6  49  6F  9E  FD  E8  5E  1F  4E  0A  E6  02  AF  34  84  BB  24  18  7A  25  EF  31  75  EA  FA  43  F5  2B  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  3D  3E  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:50.365 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  49 , errors =  24 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:50.918 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:50:918 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  4b  98  25  d6  4b  6f  9e  03  5e  a1  e1  4f  ee  f9  04  af  35  92  bb  24  18  6a  25  ec  6b  d3  ea  fa  43  45  2a  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  d5  7c  " 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:50:918 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  4B  98  25  D6  4B  6F  9E  03  5E  A1  E1  4F  EE  F9  04  AF  35  92  BB  24  18  6A  25  EC  6B  D3  EA  FA  43  45  2A  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  D5  7C  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:50.918 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  50 , errors =  24 
+ INFO 2026-06-28T19:36:51.402 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:51.402 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:51.402 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:51.402 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:51.402 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:51:402 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:51.410 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  ba  67  da  d6  45  6f  9e  fd  f0  5e  1f  4f  ee  52  04  af  34  88  bb  24  18  7a  25  ef  32  75  ea  fa  43  8c  2a  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  e5  db  " 
+ INFO 2026-06-28T19:36:51.410 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:51:410 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  BA  67  DA  D6  45  6F  9E  FD  F0  5E  1F  4F  EE  52  04  AF  34  88  BB  24  18  7A  25  EF  32  75  EA  FA  43  8C  2A  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  E5  DB  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:51.410 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:51.410 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  51 , errors =  24 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:51.743 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:51:743 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  e2  47  98  25  d6  47  6f  9e  03  5e  a1  e1  49  8f  1b  02  af  35  8a  bb  24  18  b2  25  ec  69  df  ea  fa  43  ca  2a  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  90  f8  " 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:51:743 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  E2  47  98  25  D6  47  6F  9E  03  5E  A1  E1  49  8F  1B  02  AF  35  8A  BB  24  18  B2  25  EC  69  DF  EA  FA  43  CA  2A  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  90  F8  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:51.743 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  52 , errors =  24 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\mainwindow.cpp @ 440 Request transaction. No or registers =  5 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\modbusadapter.cpp @ 159 Modbus Transaction. Function Code =  3 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\modbusadapter.cpp @ 188 Modbus Read Data  
+ INFO 2026-06-28T19:36:51.933 ..\..\src\modbusadapter.cpp @ 358 Tx Data :  "01  03  00  00  00  2a  c4  15  " 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Tx > 19:36:51:933 : 01  03  00  00  00  2A  C4  15  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\modbusadapter.cpp @ 377 Rx Data :  "01  03  54  17  02  02  01  03  00  8d  c2  00  03  09  dc  01  23  34  20  01  32  00  31  04  0a  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1d  be  67  da  d6  41  6f  9e  fd  f8  5e  1f  4f  ed  c5  04  af  34  8c  bb  24  18  7a  25  ef  3d  75  ea  fa  43  f5  2a  00  01  09  dc  01  23  00  03  00  00  03  14  16  13  b6  24  " 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\rawdatamodel.cpp @ 17 Raw Data Model Line =  "[RTU]>Rx > 19:36:51:933 : 01  03  54  17  02  02  01  03  00  8D  C2  00  03  09  DC  01  23  34  20  01  32  00  31  04  0A  03  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  1D  BE  67  DA  D6  41  6F  9E  FD  F8  5E  1F  4F  ED  C5  04  AF  34  8C  BB  24  18  7A  25  EF  3D  75  EA  FA  43  F5  2A  00  01  09  DC  01  23  00  03  00  00  03  14  16  13  B6  24  "  , No of lines =  50 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\modbusadapter.cpp @ 224 Modbus Read Data return value =  42 
+ INFO 2026-06-28T19:36:51.933 ..\..\src\mainwindow.cpp @ 547 Packets sent / received =  53 , errors =  24 
+ INFO 2026-06-28T19:36:53.151 ..\..\src\rawdatamodel.cpp @ 29 Raw Data Model cleared 
+ INFO 2026-06-28T19:37:38.212 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\mainwindow.cpp @ 197 Function Code changed. Index =  0 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\registersmodel.cpp @ 224 Registers Model Is16Bit =  false 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\mainwindow.cpp @ 415 Add Items. Function Code =  "1" 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\registersmodel.cpp @ 28 Registers Model Address =  0  , noOfItems =  1  , offset =  0  , first row =  0  , last row =  0 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\registersmodel.cpp @ 202 Registers Model Cleared 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\registersmodel.cpp @ 212 Registers Model set base =  10 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\registersmodel.cpp @ 170 Registers Model changed base from  1491836256  to  10 
+ INFO 2026-06-28T19:37:38.259 ..\..\src\mainwindow.cpp @ 102 Start Program 

@@ -71,7 +71,6 @@ private slots:
     void refreshView();
     void changeLanguage();
     void openModbusManual();
-
 signals:
     void resetCounters();
 

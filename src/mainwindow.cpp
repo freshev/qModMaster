@@ -17,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent, ModbusAdapter *adapter, ModbusCommSettin
 {
     ui->setupUi(this);
 
+    ui->mainToolBar->setStyleSheet(QString("QToolButton:checked {background-color: lightblue; }"));
+
     //UI - dialogs
     m_dlgAbout = new About();
     connect(ui->actionAbout,SIGNAL(triggered()),m_dlgAbout,SLOT(show()));
@@ -46,6 +48,7 @@ MainWindow::MainWindow(QWidget *parent, ModbusAdapter *adapter, ModbusCommSettin
     connect(ui->actionEnglish_en_US,SIGNAL(triggered()),this,SLOT(changeLanguage()));
     connect(ui->actionSimplified_Chinese_zh_CN,SIGNAL(triggered()),this,SLOT(changeLanguage()));
     connect(ui->actionTraditional_Chinese_zh_TW,SIGNAL(triggered()),this,SLOT(changeLanguage()));
+    connect(ui->actionRussian_ru_RU,SIGNAL(triggered()),this,SLOT(changeLanguage()));
 
     //UI - status
     m_statusInd = new QLabel;
@@ -175,10 +178,11 @@ void MainWindow::changedModbusMode(int currIndex)
     QLOG_INFO()<<  "Modbus Mode changed. Index = " << currIndex;
 
     if (currIndex == 0) { //RTU
-        ui->lblSlave->setText("Slave Addr");
+        ui->lblSlave->setText(QCoreApplication::translate("MainWindow", "Slave Addr", nullptr));
+
     }
     else { //TCP
-       ui->lblSlave->setText("Unit ID");
+       ui->lblSlave->setText(QCoreApplication::translate("MainWindow", "Unit ID", nullptr));
     }
 
     updateStatusBar();
@@ -512,7 +516,7 @@ void MainWindow::modbusConnect(bool connect)
                                         EUtils::parity(m_modbusCommSettings->parity()),
                                         m_modbusCommSettings->dataBits().toInt(),
                                         m_modbusCommSettings->stopBits().toInt(),
-                                        m_modbusCommSettings->RTS().toInt(),
+                                        EUtils::rts(m_modbusCommSettings->RTS()),
                                         m_modbusCommSettings->timeOut().toInt()
                                         );
         }

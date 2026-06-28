@@ -11,6 +11,9 @@
 #include <string.h>
 #ifndef _MSC_VER
 #include <unistd.h>
+#else
+#include <chrono>
+#include <thread>
 #endif
 #include <assert.h>
 
@@ -19,7 +22,7 @@
 #include "modbus-rtu.h"
 #include "modbus-rtu-private.h"
 
-#if HAVE_DECL_TIOCSRS485 || HAVE_DECL_TIOCM_RTS
+#if (HAVE_DECL_TIOCSRS485 || HAVE_DECL_TIOCM_RTS) && __linux
 #include <sys/ioctl.h>
 #endif
 
@@ -252,6 +255,18 @@ static int win32_ser_read(struct win32_ser *ws, uint8_t *p_msg,
 #endif
 
 #if HAVE_DECL_TIOCM_RTS
+#ifdef _WIN32
+void _modbus_rtu_ioctl_rts(modbus_t* ctx, int on)
+{
+    HANDLE hComm = reinterpret_cast<HANDLE>(ctx->s);
+
+    if (hComm == INVALID_HANDLE_VALUE) {
+        return;
+    }
+    DWORD dtrEscape = on ? SETRTS : CLRRTS;
+    EscapeCommFunction(hComm, dtrEscape);
+}
+#else
 static void _modbus_rtu_ioctl_rts(modbus_t *ctx, int on)
 {
     int fd = ctx->s;
@@ -266,14 +281,16 @@ static void _modbus_rtu_ioctl_rts(modbus_t *ctx, int on)
     ioctl(fd, TIOCMSET, &flags);
 }
 #endif
+#endif
 
 static ssize_t _modbus_rtu_send(modbus_t *ctx, const uint8_t *req, int req_length)
 {
 #if defined(_WIN32)
-    modbus_rtu_t *ctx_rtu = ctx->backend_data;
+    modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
     DWORD n_bytes = 0;
     return (WriteFile(ctx_rtu->w_ser.fd, req, req_length, &n_bytes, NULL)) ? (ssize_t)n_bytes : -1;
 #else
+
 #if HAVE_DECL_TIOCM_RTS
     modbus_rtu_t *ctx_rtu = ctx->backend_data;
     if (ctx_rtu->rts != MODBUS_RTU_RTS_NONE) {
@@ -304,7 +321,7 @@ static ssize_t _modbus_rtu_send(modbus_t *ctx, const uint8_t *req, int req_lengt
 static int _modbus_rtu_receive(modbus_t *ctx, uint8_t *req)
 {
     int rc;
-    modbus_rtu_t *ctx_rtu = ctx->backend_data;
+    modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
 
     if (ctx_rtu->confirmation_to_ignore) {
         _modbus_receive_msg(ctx, req, MSG_CONFIRMATION);
@@ -403,7 +420,7 @@ static int _modbus_rtu_connect(modbus_t *ctx)
     speed_t speed;
     int flags;
 #endif
-    modbus_rtu_t *ctx_rtu = ctx->backend_data;
+    modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
 
     if (ctx->debug) {
         printf("Opening %s at %d bauds (%c, %d, %d)\n",
@@ -567,7 +584,7 @@ static int _modbus_rtu_connect(modbus_t *ctx)
 
 	//***Not part of libmodbus - added for QModMaster***//
     dcb.fRtsControl = ctx_rtu->rts;
-	
+
     /* Setup port */
     if (!SetCommState(ctx_rtu->w_ser.fd, &dcb)) {
         if (ctx->debug) {
@@ -980,7 +997,7 @@ int modbus_rtu_get_rts(modbus_t *ctx)
 
     if (ctx->backend->backend_type == _MODBUS_BACKEND_TYPE_RTU) {
 #if HAVE_DECL_TIOCM_RTS
-        modbus_rtu_t *ctx_rtu = ctx->backend_data;
+        modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
         return ctx_rtu->rts;
 #else
         if (ctx->debug) {
@@ -1004,7 +1021,7 @@ int modbus_rtu_set_rts(modbus_t *ctx, int mode)
 
     if (ctx->backend->backend_type == _MODBUS_BACKEND_TYPE_RTU) {
 #if HAVE_DECL_TIOCM_RTS
-        modbus_rtu_t *ctx_rtu = ctx->backend_data;
+        modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
 
         if (mode == MODBUS_RTU_RTS_NONE || mode == MODBUS_RTU_RTS_UP ||
             mode == MODBUS_RTU_RTS_DOWN) {
@@ -1040,7 +1057,7 @@ int modbus_rtu_set_custom_rts(modbus_t *ctx, void (*set_rts) (modbus_t *ctx, int
 
     if (ctx->backend->backend_type == _MODBUS_BACKEND_TYPE_RTU) {
 #if HAVE_DECL_TIOCM_RTS
-        modbus_rtu_t *ctx_rtu = ctx->backend_data;
+        modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
         ctx_rtu->set_rts = set_rts;
         return 0;
 #else
@@ -1110,7 +1127,7 @@ int modbus_rtu_set_rts_delay(modbus_t *ctx, int us)
 static void _modbus_rtu_close(modbus_t *ctx)
 {
     /* Restore line settings and close file descriptor in RTU mode */
-    modbus_rtu_t *ctx_rtu = ctx->backend_data;
+    modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
 
 #if defined(_WIN32)
     /* Revert settings */
@@ -1135,7 +1152,7 @@ static void _modbus_rtu_close(modbus_t *ctx)
 static int _modbus_rtu_flush(modbus_t *ctx)
 {
 #if defined(_WIN32)
-    modbus_rtu_t *ctx_rtu = ctx->backend_data;
+    modbus_rtu_t *ctx_rtu = (modbus_rtu_t *)ctx->backend_data;
     ctx_rtu->w_ser.n_bytes = 0;
     return (PurgeComm(ctx_rtu->w_ser.fd, PURGE_RXCLEAR) == FALSE);
 #else
